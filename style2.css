@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Silkscreen';
+}
+
+body,
+html {
+    height: 100%;
+    color: rgb(255, 255, 255);
+    line-height: 1.8;
+    background-color: #1582fe;
+}
+
+.image {
+    background: #34495e;
+    border: 1px solid #34495e;
+    width: 200px;
+    height: 200px;
+}
+
+.image-cover {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+i.fa {
+    padding-top: .2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    transition: color 1s;
+}
+
+.fa-fire:hover {
+    color: #4a4;
+}
+
+.fa-facebook:hover {
+    color: #04a;
+}
+
+.fa-codepen:hover {
+    color: #4af;
+}
+
+#profile {
+    vertical-align: middle;
+}

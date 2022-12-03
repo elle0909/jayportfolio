@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Style tags -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+
+    <!-- JS scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h2 class="w3-center">MY WORK</h2>
+        <p class="w3-center" style="color:  rgb(94, 255, 0);"><em>Here are some of my latest personal artworks.<br>
+                Click on the images to make them
+                bigger</em>
+        </p><br>
+
+        <!-- Responsive Grid -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW1.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW2.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW3.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW4.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW5.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW6.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW7.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW8.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW9.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW10.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW11.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+
+            <div class="w3-col m3">
+                <img class="image image-cover" src="../Portfolio /Images/PW12.jpg" style="width:100%"
+                    onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" style="max-width:100%">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

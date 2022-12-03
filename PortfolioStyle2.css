@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+/* main home page body text */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+
+}
+
+/* home background */
+body {
+    display: flex;
+    background: #ffeaa7;
+    align-items: center;
+
+}

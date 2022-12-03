@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  background-color: #ff7675;
+
+  align-content: center;
+  min-height: 100vh;
+}
+
+section {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 70vh;
+  width: 75vw;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px
+}
+
+.image {
+  background-color: #d30069;
+  display: flex;
+  border-radius: 12px 0 0 12px;
+}
+
+.image img {
+  height: 60vh;
+  margin: 80px auto
+}
+
+.content {
+  background-color: #1582fe;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 12px 12px 0;
+  color: #fff;
+}
+
+.content h2 {
+
+  font-family: "Silkscreen";
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 6px;
+  opacity: 0.9;
+}
+
+.content span {
+  height: 0.5px;
+  width: 80px;
+  background: rgba(119, 119, 119, 0);
+  margin: 30px 0;
+}
+
+.content p {
+  padding-bottom: 15px;
+  font-weight: 300;
+  opacity: 0.7;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #ffffff
+}
+
+.links {
+  margin: 15px 0;
+}
+
+.links li {
+  position: relative;
+  font-family: "Silkscreen";
+  border: 2px solid #59ff00;
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px 50px;
+  width: 160px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.links li a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.links li:hover {
+  border-color: #d30069;
+}
+
+.vertical-line {
+  height: 30px;
+  width: 3px;
+  background: #d30069;
+  margin: 0 auto;
+}
+
+
+/*****************/
+
+@media(max-width: 900px) {
+  section {
+    grid-template-columns: 1fr;
+    width: 100%;
+    border-radius: none;
+  }
+
+  .image {
+    height: 100vh;
+    border-radius: none;
+  }
+
+  .content {
+    height: 100vh;
+    border-radius: none;
+  }
+
+  .content h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .content span {
+    margin: 20px 0;
+
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .links li a {
+    font-size: 14px;
+  }
+
+  .links {
+    margin: 5px 0;
+  }
+
+  .links li {
+    padding: 6px 10px;
+
+  }
+
+  .icons li i {
+    font-size: 15px;
+  }
+}
+
+/* Liquid button test */
+
+.btn-liquid {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 27px;
+
+  color: #fff;
+  font: 700 20px/60px "Silkscreen";
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-liquid .inner {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+.btn-liquid canvas {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  bottom: -50px;
+  left: -50px;
+
+  z-index: 1;
+}

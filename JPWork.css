@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1582fe;
+}
+
+.display-4 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+
+}
+
+/* Links for artwork cards */
+
+a:link {
+    color: rgb(94, 255, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(94, 255, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 0, 187);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+
+.icon-link>.bi {
+    margin-top: .125rem;
+    margin-left: .125rem;
+    fill: currentcolor;
+    transition: transform .25s ease-in-out;
+}
+
+.icon-link:hover>.bi {
+    transform: translate(.25rem);
+}
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+}
+
+.text-shadow-1 {
+    text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+}
+
+.text-shadow-2 {
+    text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+}
+
+.text-shadow-3 {
+    text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+}
+
+.card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Liquid Button */
+.links {
+    margin: 15px 0;
+}
+
+.links li {
+    position: relative;
+    font-family: "Silkscreen";
+    border: 2px solid #59ff00;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 50px;
+    width: 160px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.links li a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.links li:hover {
+    border-color: #d30069;
+}
+
+.btn-liquid {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 27px;
+
+    color: #fff;
+    font: 700 20px/60px "Silkscreen";
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-liquid .inner {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+.btn-liquid canvas {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
+
+    z-index: 1;
+}
